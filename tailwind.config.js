@@ -1,8 +1,4 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-
-const color = {
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -70,33 +66,9 @@ const color = {
         '144': '36rem',
       },
       borderRadius: {
-        '4xl': '2rem',
+        'xl': '84px',
       },
     },
   },
   plugins: [],
 }
-
-const Home: NextPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>{"Ilyass's"} portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center bg-slate-100">
-        <h1 className="font-freight_text">Freight</h1>
-        <h1 className="font-mont">Montserrat</h1>
-        <h1 className="font-open_sans">open Sans</h1>
-        <h1 className="font-playfair_display">Playfair display</h1>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        footer
-      </footer>
-    </div>
-  )
-}
-
-export default Home

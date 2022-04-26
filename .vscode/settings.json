@@ -1,0 +1,35 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Panda Syntax",
+  
+    // "editor.defaultFormatter": "svipas.prettier-plus",
+    "auto-rename-tag.activationOnLanguage": ["*"],
+    // "prettier.singleQuote": true,
+    // "prettier.jsxSingleQuote": true,
+    "editor.formatOnSave": true,
+    // "prettier.tslintIntegration": true,
+    // "prettier.eslintIntegration": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "[javacriptreact]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      }},
+    "[typescript]": {
+      "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "prettier.requireConfig": true,
+    "eslint.validate": ["javascript"],
+    "eslint.format.enable": true,
+  }
+  
