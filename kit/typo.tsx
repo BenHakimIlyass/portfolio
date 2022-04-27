@@ -10,7 +10,7 @@ const typoVariants = {
   p: 'font-montserrat font-regular text-paragraph leading-6',
   small: 'font-montserrat font-regular text-small leading-6',
   smallSemibold: 'font-montserrat font-semibold text-small leading-6',
-  smallFreightText: 'font-freight_text font-regular text-paragraph leading-7',
+  smallFreightText: 'font-freight_text font-regular text-paragraph leading-6',
 }
 
 type Props = {

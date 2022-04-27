@@ -1,3 +1,4 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -8,7 +9,6 @@ import Career from '../components/career'
 import Education from '../components/education'
 import Image, { ImageProps } from 'next/image'
 import Seo from '../components/seo'
-import React from 'react'
 
 const Container: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="w-full max-w-md flex-1 flex-col m-auto relative">
