@@ -6,37 +6,41 @@ import Typo from '../kit/typo'
 import Stack from '../kit/stack'
 import Career from '../components/career'
 import Education from '../components/education'
-import Image from 'next/image'
+import Image, { ImageProps } from 'next/image'
+import Seo from '../components/seo'
+import React from 'react'
+
+const HeroImage: React.FC<ImageProps> = (props) => (
+  <div className="w-250 h-100 relative">
+    <Image
+      objectFit="cover"
+      layout="fill"
+      className="rounded-xl"
+      priority
+      alt={props?.alt}
+      {...props}
+    />
+  </div>
+)
 
 const Home: NextPage = () => {
   return (
     <div className="flex w-full flex-1 flex-col py-140 xs:px-18 md:px-40 h-fit">
+      <Seo />
+
       <Head>
-        <title>{"Ilyass's"} portfolio</title>
+        <title>Ilyass Ben Hakim - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="w-full max-w-md flex-1 flex-col m-auto relative">
         <Stack className="gap-40 absolute right-0 top-0 xs:hidden lg:flex">
-          <div className="w-250 h-100 ml-80 relative">
-            <Image
-              objectFit="cover"
-              layout="fill"
-              className="rounded-xl"
-              src="/images/birds.png"
-              alt="Useless birds"
-            />
-          </div>
-          <div className="w-250 h-100 relative">
-            <Image
-              objectFit="cover"
-              layout="fill"
-              className="rounded-xl"
-              src="/images/paint.png"
-              alt="Useless paint drop"
-            />
-          </div>
-          <Typo variant="smallFreightText" className="text-right text-grey-400 leading-7">
+          <HeroImage src="/images/birds.png" alt="Useless birds" />
+          <HeroImage src="/images/paint.png" alt="Useless paint drop" />
+          <Typo
+            variant="smallFreightText"
+            className="text-right text-grey-400 leading-7"
+          >
             These images {"don't"} serve any reason
             <div>They just look good</div>
           </Typo>
