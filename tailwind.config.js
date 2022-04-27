@@ -1,13 +1,14 @@
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
+    './kit/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screens: {
       sm: '480px',
       md: '768px',
-      lg: '976px',
+      lg: '1180px',
       xl: '1440px',
     },
     colors: {
@@ -54,16 +55,43 @@ module.exports = {
         500: '#7F3D0B',
       },
     },
+    maxWidth: {
+      md: 1180,
+    },
     fontFamily: {
       freight_text: ['Freight Text'],
       montserrat: ['Montserrat'],
       open_sans: ['Open Sans'],
       playfair_display: ['Playfair Display'],
     },
+    fontSize: {
+      heading1: '32px',
+      heading2: '26px',
+      heading3: '20px',
+      heading4: '18px',
+      heading5: '14px',
+      heading6: '16px',
+      paragraph: '16px',
+      small: '14px',
+    },
+    fontWeight: {
+      regular: 400,
+      semibold: 500,
+      bold: 700
+    },
     extend: {
       spacing: {
-        '128': '32rem',
-        '144': '36rem',
+        '0':'0px',
+        '6': '6px',
+        '8': '8px',
+        '12': '12px',
+        '18': '18px',
+        '30': '30px',
+        '40': '40px',
+        '60': '60px',
+        '80': '80px',
+        '100': '100px',
+        '140': '140px',
       },
       borderRadius: {
         'xl': '84px',
