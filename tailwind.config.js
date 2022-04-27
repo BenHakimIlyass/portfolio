@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xs: '0px',
       sm: '480px',
       md: '768px',
       lg: '1180px',
@@ -92,6 +93,7 @@ module.exports = {
         '80': '80px',
         '100': '100px',
         '140': '140px',
+        '250': '250px'
       },
       lineHeight: {
         '1': '47px',
@@ -100,6 +102,7 @@ module.exports = {
         '4': '24px',
         '5': '24px',
         '6': '24px',
+        '7': '52px',
       },
       borderRadius: {
         'xl': '84px',
