@@ -16,27 +16,27 @@ const Career: React.FC<Props> = (props) => {
   return (
     <Stack className="gap-18">
       <Stack className="gap-6">
-        <Typo variant="h5" className="text-grey-500 leading-5">
+        <Typo variant="h5" className="text-grey-500">
           {position}{' '}
           <Typo
             variant="h5"
             as="span"
-            className="italic font-regular leading-5"
+            className="italic font-regular"
           >
             {mode}
           </Typo>
         </Typo>
-        <Typo variant="h5" className="text-grey-300 leading-5">
+        <Typo variant="h5" className="text-grey-300">
           {period}
         </Typo>
-        <Typo variant="small" className="text-grey-400 leading-6">
+        <Typo variant="small" className="text-grey-400">
           <Typo variant="smallSemibold" as="span">
             {company} -{' '}
           </Typo>
           {location} (remote)
         </Typo>
       </Stack>
-      <Typo variant="p" className="text-grey-500 leading-6">
+      <Typo variant="p" className="text-grey-500">
         {description}
       </Typo>
     </Stack>

@@ -10,15 +10,21 @@ import Image, { ImageProps } from 'next/image'
 import Seo from '../components/seo'
 import React from 'react'
 
-const HeroImage: React.FC<ImageProps> = (props) => (
-  <div className="w-250 h-100 relative">
+const Container: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div className="w-full max-w-md flex-1 flex-col m-auto relative">
+    {children}
+  </div>
+)
+
+const HeroImage: React.FC<ImageProps> = ({ className = '', alt, ...rest }) => (
+  <div className={`w-250 h-100 relative ${className}`}>
     <Image
       objectFit="cover"
       layout="fill"
       className="rounded-xl"
       priority
-      alt={props?.alt}
-      {...props}
+      alt={alt}
+      {...rest}
     />
   </div>
 )
@@ -27,33 +33,35 @@ const Home: NextPage = () => {
   return (
     <div className="flex w-full flex-1 flex-col py-140 xs:px-18 md:px-40 h-fit">
       <Seo />
-
       <Head>
         <title>Ilyass Ben Hakim - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-full max-w-md flex-1 flex-col m-auto relative">
+      <Container>
+        {/* useless images */}
         <Stack className="gap-40 absolute right-0 top-0 xs:hidden lg:flex">
-          <HeroImage src="/images/birds.png" alt="Useless birds" />
+          <HeroImage
+            src="/images/birds.png"
+            alt="Useless birds"
+            className="ml-80"
+          />
           <HeroImage src="/images/paint.png" alt="Useless paint drop" />
-          <Typo
-            variant="smallFreightText"
-            className="text-right text-grey-400 leading-7"
-          >
+          <Typo variant="smallFreightText" className="text-right text-grey-400">
             These images {"don't"} serve any reason
             <div>They just look good</div>
           </Typo>
         </Stack>
+
         {/* layout */}
         <Stack className="gap-100">
           <header>
             {/* hero */}
             <Stack className="gap-12">
-              <Typo variant="h1" className="text-grey-500 leading-1">
+              <Typo variant="h1" className="text-grey-500">
                 Hey there, welcome to my portfolio
               </Typo>
-              <Typo variant="h2" className="text-indigo-500 leading-2">
+              <Typo variant="h2" className="text-indigo-500">
                 My name is Ilyass Ben Hakim - I’m a Software engineer
               </Typo>
             </Stack>
@@ -64,13 +72,13 @@ const Home: NextPage = () => {
             <Stack className="gap-80">
               {/* career */}
               <Stack className="gap-60">
-                <Typo variant="h3" className="text-grey-400 leading-3">
+                <Typo variant="h3" className="text-grey-400">
                   Career
                 </Typo>
 
                 {/* 2021 - 2022 */}
                 <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300 leading-4">
+                  <Typo variant="h4" className="text-grey-300">
                     2021 - 2022
                   </Typo>
                   <Career
@@ -132,13 +140,13 @@ const Home: NextPage = () => {
 
               {/* education */}
               <Stack className="gap-60">
-                <Typo variant="h3" className="text-grey-400 leading-3">
+                <Typo variant="h3" className="text-grey-400">
                   Education
                 </Typo>
 
                 {/* 2019 - 2021 */}
                 <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300 leading-4">
+                  <Typo variant="h4" className="text-grey-300">
                     2019 - 2021
                   </Typo>
                   <Education
@@ -189,7 +197,7 @@ const Home: NextPage = () => {
             </Stack>
           </footer>
         </Stack>
-      </div>
+      </Container>
     </div>
   )
 }
