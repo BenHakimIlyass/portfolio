@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           />
           <HeroImage src="/images/paint.png" alt="Useless paint drop" />
           <Typo variant="smallFreightText" className="text-right text-grey-400">
-            These images {"don't"} serve any reason
+            These images {"don't"} serve any purpose
             <div>They just look good</div>
           </Typo>
         </Stack>
