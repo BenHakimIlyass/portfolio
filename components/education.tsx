@@ -2,41 +2,33 @@ import Stack from '../kit/stack'
 import Typo from '../kit/typo'
 
 type Props = {
-  position: string
-  mode: string
-  period: string
-  company: string
+  univesity: string
+  degree: string
   location: string
-  description: string
+  field: string
 }
 
-const Career: React.FC<Props> = (props) => {
-  const { position, mode, period, company, location, description } = props
+const Education: React.FC<Props> = (props) => {
+  const { univesity, degree, location, field } = props
 
   return (
-    <Stack className="gap-18">
-      <Stack gap="6">
-        <Typo variant="h5" className="text-grey-500">
-          {position}{' '}
-          <Typo variant="h5" as="span" className="italic font-regular">
-            {mode}
-          </Typo>
-        </Typo>
-        <Typo variant="h5" className="text-grey-300">
-          {period}
-        </Typo>
-        <Typo variant="small" className="text-grey-400">
-          <Typo variant="smallSemibold" as="span">
-            {company} -{' '}
-          </Typo>
-          {location} (remote)
-        </Typo>
-      </Stack>
-      <Typo variant="p" className="text-grey-500">
-        {description}
+    <Stack className="gap-12">
+      <Typo variant="h5" className="text-grey-500 leading-5">
+        {degree} degree
+      </Typo>
+
+      <Typo variant="small" className="text-grey-400 leading-6">
+        <Typo variant="smallSemibold" as="span" className="text-grey-400 leading-5">
+          {univesity}
+        </Typo>{' - '}
+        {location}
+      </Typo>
+
+      <Typo variant="p" className="text-grey-500 leading-6">
+        {field}
       </Typo>
     </Stack>
   )
 }
 
-export default Career
+export default Education

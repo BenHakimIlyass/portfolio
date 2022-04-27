@@ -5,6 +5,7 @@ import * as Icon from '../kit/icon'
 import Typo from '../kit/typo'
 import Stack from '../kit/stack'
 import Career from '../components/career'
+import Education from '../components/education'
 
 const Home: NextPage = () => {
   return (
@@ -20,10 +21,10 @@ const Home: NextPage = () => {
           <header>
             {/* hero */}
             <Stack className="gap-12">
-              <Typo variant="h1" className="text-grey-500">
+              <Typo variant="h1" className="text-grey-500 leading-1">
                 Hey there, welcome to my portfolio
               </Typo>
-              <Typo variant="h2" className="text-indigo-500">
+              <Typo variant="h2" className="text-indigo-500 leading-2">
                 My name is Ilyass Ben Hakim - I’m a Software engineer
               </Typo>
             </Stack>
@@ -34,13 +35,13 @@ const Home: NextPage = () => {
             <Stack className="gap-80">
               {/* career */}
               <Stack className="gap-60">
-                <Typo variant="h3" className="text-grey-400">
+                <Typo variant="h3" className="text-grey-400 leading-3">
                   Career
                 </Typo>
 
                 {/* 2021 - 2022 */}
                 <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300">
+                  <Typo variant="h4" className="text-grey-300 leading-4">
                     2021 - 2022
                   </Typo>
                   <Career
@@ -82,21 +83,54 @@ const Home: NextPage = () => {
                     location="Earth"
                     description="A community platform for everything Gluten-free related."
                   />
+                </Stack>
 
-                  {/* 2019 - 2020 */}
-                  <Stack className="gap-40">
-                    <Typo variant="h4" className="text-grey-300">
-                      2019 - 2020
-                    </Typo>
-                    <Career
-                      position="Frontend developer"
-                      mode="internship"
-                      period="Jun 2019 - Nov 2019"
-                      company="Next-challenge"
-                      location="France"
-                      description="An AI powered hiring platform, taking care of the matching process between a resume and a job offer."
-                    />
-                  </Stack>
+                {/* 2019 - 2020 */}
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    2019 - 2020
+                  </Typo>
+                  <Career
+                    position="Frontend developer"
+                    mode="internship"
+                    period="Jun 2019 - Nov 2019"
+                    company="Next-challenge"
+                    location="France"
+                    description="An AI powered hiring platform, taking care of the matching process between a resume and a job offer."
+                  />
+                </Stack>
+              </Stack>
+
+              {/* education */}
+              <Stack className="gap-60">
+                <Typo variant="h3" className="text-grey-400 leading-3">
+                  Education
+                </Typo>
+
+                {/* 2019 - 2021 */}
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300 leading-4">
+                    2019 - 2021
+                  </Typo>
+                  <Education
+                    location="Morocco, Casablanca"
+                    degree="Master's"
+                    univesity="YNOV"
+                    field="Software engineering"
+                  />
+                </Stack>
+
+                {/* 2018 - 2019 */}
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    2018 - 2019
+                  </Typo>
+                  <Education
+                    location="Morocco, Tangier"
+                    degree="Professional"
+                    univesity="BMHS SUPTEM"
+                    field="Computer science"
+                  />
                 </Stack>
               </Stack>
             </Stack>

@@ -93,6 +93,14 @@ module.exports = {
         '100': '100px',
         '140': '140px',
       },
+      lineHeight: {
+        '1': '47px',
+        '2': '34px',
+        '3': '28px',
+        '4': '24px',
+        '5': '24px',
+        '6': '24px',
+      },
       borderRadius: {
         'xl': '84px',
       },
