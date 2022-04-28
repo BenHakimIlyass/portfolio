@@ -185,6 +185,9 @@ const Home: NextPage = () => {
                   rel="noopener noreferrer"
                 >
                   <Icon.Github />
+                  <span className="h-1 w-1 absolute overflow-hidden	top-[-10px]">
+                    Github
+                  </span>
                 </a>
                 <a
                   href="mailto:ilyassbenhakim2@gmail.com"
@@ -192,6 +195,10 @@ const Home: NextPage = () => {
                   rel="noopener noreferrer"
                 >
                   <Icon.Mail />
+
+                  <span className="h-1 w-1 absolute overflow-hidden	top-[-10px]">
+                    Email
+                  </span>
                 </a>
               </Stack>
             </Stack>
