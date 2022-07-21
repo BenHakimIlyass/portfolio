@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                   <Career
                     position="Frontend developer"
                     mode="part-time"
-                    period="Jan 2021 - Jun 2021"
+                    period="Jan 2021 - Apr 2021"
                     company="Nvision"
                     location="Luxembourg"
                     description="Real estate platform for buildings management."
