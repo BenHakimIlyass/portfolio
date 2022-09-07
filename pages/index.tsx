@@ -76,6 +76,21 @@ const Home: NextPage = () => {
                   Career
                 </Typo>
 
+                {/* 2022 - 2023 */}
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    2022 - 2023
+                  </Typo>
+                  <Career
+                    position="Frontend engineer"
+                    mode="fulltime"
+                    period="Sep 2022 - Present"
+                    company="Gonuggets"
+                    location="Luxembourg"
+                    description="AI based platform that delivers growth to brands selling on marketplaces and D2C channels across EMEA."
+                  />
+                </Stack>
+
                 {/* 2021 - 2022 */}
                 <Stack className="gap-40">
                   <Typo variant="h4" className="text-grey-300">
@@ -84,7 +99,7 @@ const Home: NextPage = () => {
                   <Career
                     position="Frontend engineer"
                     mode="fulltime"
-                    period="Oct 2021 - Present"
+                    period="Oct 2021 - Sep 2022"
                     company="Monk"
                     location="France"
                     description="AI Powered car damage inspection, based on a cross-platform React Native SDK and a set of frontend packages, combined in a RN application."
