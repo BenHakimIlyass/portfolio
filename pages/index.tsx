@@ -83,11 +83,11 @@ const Home: NextPage = () => {
                   </Typo>
                   <Career
                     position="Frontend engineer"
-                    mode="fulltime"
+                    mode="full-time"
                     period="Sep 2022 - Present"
                     company="Gonuggets"
                     location="Luxembourg"
-                    description="AI based platform that delivers growth to brands selling on marketplaces and D2C channels across EMEA."
+                    description="An internal AI powered platform that manages and delivers growth to brands selling on e-commerce marketplaces and D2C channels across EMEA."
                   />
                 </Stack>
 
@@ -98,11 +98,11 @@ const Home: NextPage = () => {
                   </Typo>
                   <Career
                     position="Frontend engineer"
-                    mode="fulltime"
+                    mode="full-time"
                     period="Oct 2021 - Sep 2022"
                     company="Monk"
-                    location="France"
-                    description="AI Powered car damage inspection, based on a cross-platform React Native SDK and a set of frontend packages, combined in a RN application."
+                    location="France (remote)"
+                    description="AI Powered car damage inspection, based on a cross-platform SDK and a set of frontend packages, combined in a  React Native application."
                   />
                   <Career
                     position="Frontend developer"
@@ -124,7 +124,7 @@ const Home: NextPage = () => {
                     mode="part-time"
                     period="Dec 2020 - Apr 2022"
                     company="Shighel"
-                    location="Kuwait"
+                    location="Kuwait (remote)"
                     description="A fiverr like, freelancing/recruitment platform based on the GCC."
                   />
                   <Career
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
                     period="Jan 2020 - Present"
                     company="Gfree"
                     location="Earth"
-                    description="A community platform for everything Gluten-free related."
+                    description="A community platform for everything Gluten-free related, where users can engage in creating and sharing their ideas, including recipes and personal stories."
                   />
                 </Stack>
 
@@ -147,8 +147,8 @@ const Home: NextPage = () => {
                     mode="internship"
                     period="Jun 2019 - Nov 2019"
                     company="Next-challenge"
-                    location="France"
-                    description="An AI powered hiring platform, taking care of the matching process between a resume and a job offer."
+                    location="France (remote)"
+                    description="An AI powered hiring platform, taking care of the match-making process between a resume and a job offer."
                   />
                 </Stack>
               </Stack>

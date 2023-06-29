@@ -18,11 +18,7 @@ const Career: React.FC<Props> = (props) => {
       <Stack className="gap-6">
         <Typo variant="h5" className="text-grey-500">
           {position}{' '}
-          <Typo
-            variant="h5"
-            as="span"
-            className="italic font-regular"
-          >
+          <Typo variant="h5" as="span" className="italic font-regular">
             {mode}
           </Typo>
         </Typo>
@@ -33,7 +29,7 @@ const Career: React.FC<Props> = (props) => {
           <Typo variant="smallSemibold" as="span">
             {company} -{' '}
           </Typo>
-          {location} (remote)
+          {location}
         </Typo>
       </Stack>
       <Typo variant="p" className="text-grey-500">
