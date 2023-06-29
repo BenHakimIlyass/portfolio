@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                     period="Jan 2021 - Apr 2021"
                     company="Nvision"
                     location="Luxembourg"
-                    description="Real estate platform for buildings management."
+                    description="A real estate platform that manages listings, sales and marketing."
                   />
                 </Stack>
 
