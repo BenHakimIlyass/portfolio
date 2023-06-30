@@ -5,7 +5,7 @@ import Head from 'next/head'
 import * as Icon from '../kit/icon'
 import Typo from '../kit/typo'
 import Stack from '../kit/stack'
-import Career from '../components/career'
+import Career, { Technology } from '../components/career'
 import Education from '../components/education'
 import Image, { ImageProps } from 'next/image'
 import Seo from '../components/seo'
@@ -76,81 +76,114 @@ const Home: NextPage = () => {
                   Career
                 </Typo>
 
-                {/* 2022 - 2023 */}
-                <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300">
-                    2022 - 2023
-                  </Typo>
-                  <Career
-                    position="Frontend engineer"
-                    mode="full-time"
-                    period="Sep 2022 - Present"
-                    company="Gonuggets"
-                    location="Luxembourg"
-                    description="An internal AI powered platform that manages and delivers growth to brands selling on e-commerce marketplaces and D2C channels across EMEA."
-                  />
-                </Stack>
+                <Career
+                  position="Frontend engineer"
+                  mode="full-time"
+                  period="Sep 2022 - Present"
+                  company="Gonuggets"
+                  location="Luxembourg"
+                  description="An internal AI powered platform that manages and delivers growth to brands selling on e-commerce marketplaces and D2C channels across EMEA."
+                  technologies={[
+                    'REACT',
+                    'NEXTJS',
+                    'SWR',
+                    'TYPESCRIPT',
+                    'JAVASCRIPT',
+                    'EMOTION',
+                  ]}
+                />
 
-                {/* 2021 - 2022 */}
-                <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300">
-                    2021 - 2022
-                  </Typo>
-                  <Career
-                    position="Frontend engineer"
-                    mode="full-time"
-                    period="Oct 2021 - Sep 2022"
-                    company="Monk"
-                    location="France (remote)"
-                    description="AI Powered car damage inspection, based on a cross-platform SDK and a set of frontend packages, combined in a  React Native application."
-                  />
-                  <Career
-                    position="Frontend developer"
-                    mode="part-time"
-                    period="Jan 2021 - Apr 2021"
-                    company="Nvision"
-                    location="Luxembourg"
-                    description="A real estate platform that manages listings, sales and marketing."
-                  />
-                </Stack>
+                <Career
+                  position="Frontend engineer"
+                  mode="full-time"
+                  period="Oct 2021 - Sep 2022"
+                  company="Monk"
+                  location="France (remote)"
+                  description="AI Powered car damage inspection, based on a cross-platform SDK and a set of frontend packages, combined in a  React Native application."
+                  technologies={[
+                    'REACT',
+                    'REACT NATIVE',
+                    'EXPO',
+                    'REDUX',
+                    'FORMIK',
+                    'TYPESCRIPT',
+                    'JAVASCRIPT',
+                    'REACT NATIVE ANIMATED',
+                  ]}
+                />
+                <Career
+                  position="Frontend developer"
+                  mode="part-time"
+                  period="Jan 2021 - Apr 2021"
+                  company="Nvision"
+                  location="Luxembourg"
+                  description="A real estate platform that manages listings, sales and marketing."
+                  technologies={[
+                    'REACT',
+                    'REDUX',
+                    'MUI',
+                    'FORMIK',
+                    'AXIOS',
+                    'JAVASCRIPT',
+                    'NATIVE CSS',
+                  ]}
+                />
 
-                {/* 2020 - 2021 */}
-                <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300">
-                    2020 - 2021
-                  </Typo>
-                  <Career
-                    position="Frontend engineer"
-                    mode="part-time"
-                    period="Dec 2020 - Apr 2022"
-                    company="Shighel"
-                    location="Kuwait (remote)"
-                    description="A fiverr like, freelancing/recruitment platform based on the GCC."
-                  />
-                  <Career
-                    position="Co-founder"
-                    mode="side project"
-                    period="Jan 2020 - Present"
-                    company="Gfree"
-                    location="Earth"
-                    description="A community platform for everything Gluten-free related, where users can engage in creating and sharing their ideas, including recipes and personal stories."
-                  />
-                </Stack>
+                <Career
+                  position="Frontend engineer"
+                  mode="part-time"
+                  period="Dec 2020 - Apr 2022"
+                  company="Shighel"
+                  location="Kuwait (remote)"
+                  description="A fiverr like, freelancing/recruitment platform based on the GCC."
+                  technologies={[
+                    'REACT',
+                    'NEXTJS',
+                    'APOLLO GRAPHQL',
+                    'FORMIK',
+                    'JAVASCRIPT',
+                    'TYPESCRIPT',
+                    'STYLED-COMPONENTS',
+                  ]}
+                />
+                <Career
+                  position="Co-founder"
+                  mode="side project"
+                  period="Jan 2020 - Present"
+                  company="Gfree"
+                  location="Earth"
+                  description="A community platform for everything Gluten-free related, where users can engage in creating and sharing their ideas, including recipes and personal stories."
+                  technologies={[
+                    'REACT',
+                    'NEXTJS',
+                    'REDUX',
+                    'REDUX THUNK',
+                    'FORMIK',
+                    'JAVASCRIPT',
+                    'TYPESCRIPT',
+                    'AXIOS',
+                    'STYLED-COMPONENTS',
+                    'NODEJS',
+                    'EXPRESSJS',
+                  ]}
+                />
 
-                {/* 2019 - 2020 */}
-                <Stack className="gap-40">
-                  <Typo variant="h4" className="text-grey-300">
-                    2019 - 2020
-                  </Typo>
-                  <Career
-                    position="Frontend developer"
-                    mode="internship"
-                    period="Jun 2019 - Nov 2019"
-                    company="Next-challenge"
-                    location="France (remote)"
-                    description="An AI powered hiring platform, taking care of the match-making process between a resume and a job offer."
-                  />
-                </Stack>
+                <Career
+                  position="Frontend developer"
+                  mode="internship"
+                  period="Jun 2019 - Nov 2019"
+                  company="Next-challenge"
+                  location="France (remote)"
+                  description="An AI powered hiring platform, taking care of the match-making process between a resume and a job offer."
+                  technologies={[
+                    'REACT',
+                    'REDUX',
+                    'REDUX SAGA',
+                    'JAVASCRIPT',
+                    'STYLED-COMPONENTS',
+                    'AXIOS',
+                  ]}
+                />
               </Stack>
 
               {/* education */}
@@ -183,6 +216,67 @@ const Home: NextPage = () => {
                     univesity="BMHS SUPTEM"
                     field="Computer science"
                   />
+                </Stack>
+              </Stack>
+
+              <Stack className="gap-60">
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    Programming languages and frameworks
+                  </Typo>
+                  <Stack className="gap-12" wrap row>
+                    {[
+                      'TYPESCRIPT',
+                      'JAVASCRIPT',
+                      'REACTJS',
+                      'NEXTJS',
+                      'REACT NATIVE',
+                      'EXPO',
+                    ].map((technology) => (
+                      <Technology label={technology} key={technology} />
+                    ))}
+                  </Stack>
+                </Stack>
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    Data fetching and state management
+                  </Typo>
+                  <Stack className="gap-12" wrap row>
+                    {[
+                      'REDUX',
+                      'REDUX SAGA/THUNK',
+                      'SWR',
+                      'SSR',
+                      'CSR',
+                      'APOLLO GRAPHQL',
+                      'CONTEXT API',
+                    ].map((technology) => (
+                      <Technology label={technology} key={technology} />
+                    ))}
+                  </Stack>
+                </Stack>
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    Styling and animation
+                  </Typo>
+                  <Stack className="gap-12" wrap row>
+                    {[
+                      'EMOTION',
+                      'STYLED-COMPONENTS',
+                      'STITCHES',
+                      'TAILWIND',
+                      'NATIVE CSS',
+                      'FRAMER MOTION',
+                      'REACT SPRING',
+                      'REACT NATIVE ANIMATED',
+                      'MUI',
+                      'MANTINE UI',
+                      'CHAKRA UI',
+                      'RADIX UI',
+                    ].map((technology) => (
+                      <Technology label={technology} key={technology} />
+                    ))}
+                  </Stack>
                 </Stack>
               </Stack>
             </Stack>
