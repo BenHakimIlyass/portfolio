@@ -1,14 +1,14 @@
-import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import React from 'react'
 
-import * as Icon from '../kit/icon'
-import Typo from '../kit/typo'
-import Stack from '../kit/stack'
+import Image, { ImageProps } from 'next/image'
 import Career, { Technology } from '../components/career'
 import Education from '../components/education'
-import Image, { ImageProps } from 'next/image'
 import Seo from '../components/seo'
+import * as Icon from '../kit/icon'
+import Stack from '../kit/stack'
+import Typo from '../kit/typo'
 
 const Container: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="w-full max-w-md flex-1 flex-col m-auto relative">
@@ -90,6 +90,10 @@ const Home: NextPage = () => {
                     'TYPESCRIPT',
                     'JAVASCRIPT',
                     'EMOTION',
+                    'GLIDE',
+                    'JEST',
+                    'REACT TESTING LIBRARY',
+                    'ESLINT',
                   ]}
                 />
 
@@ -109,6 +113,10 @@ const Home: NextPage = () => {
                     'TYPESCRIPT',
                     'JAVASCRIPT',
                     'REACT NATIVE ANIMATED',
+                    'AUTH0',
+                    'GIT',
+                    'SENTRY',
+                    'ESLINT',
                   ]}
                 />
                 <Career
@@ -121,11 +129,12 @@ const Home: NextPage = () => {
                   technologies={[
                     'REACT',
                     'REDUX',
-                    'MUI',
                     'FORMIK',
+                    'MUI',
                     'AXIOS',
                     'JAVASCRIPT',
-                    'NATIVE CSS',
+                    'PURE CSS',
+                    'GIT',
                   ]}
                 />
 
@@ -144,6 +153,10 @@ const Home: NextPage = () => {
                     'JAVASCRIPT',
                     'TYPESCRIPT',
                     'STYLED-COMPONENTS',
+                    'JEST',
+                    'REACT TESTING LIBRARY',
+                    'GIT',
+                    'ESLINT',
                   ]}
                 />
                 <Career
@@ -161,10 +174,15 @@ const Home: NextPage = () => {
                     'FORMIK',
                     'JAVASCRIPT',
                     'TYPESCRIPT',
-                    'AXIOS',
                     'STYLED-COMPONENTS',
+                    'AXIOS',
                     'NODEJS',
                     'EXPRESSJS',
+                    'JEST',
+                    'REACT TESTING LIBRARY',
+                    'HUSKY',
+                    'GIT',
+                    'ESLINT',
                   ]}
                 />
 
@@ -182,6 +200,7 @@ const Home: NextPage = () => {
                     'JAVASCRIPT',
                     'STYLED-COMPONENTS',
                     'AXIOS',
+                    'GIT',
                   ]}
                 />
               </Stack>
@@ -265,7 +284,7 @@ const Home: NextPage = () => {
                       'STYLED-COMPONENTS',
                       'STITCHES',
                       'TAILWIND',
-                      'NATIVE CSS',
+                      'PURE CSS',
                       'FRAMER MOTION',
                       'REACT SPRING',
                       'REACT NATIVE ANIMATED',
@@ -273,6 +292,24 @@ const Home: NextPage = () => {
                       'MANTINE UI',
                       'CHAKRA UI',
                       'RADIX UI',
+                      'GLIDE',
+                    ].map((technology) => (
+                      <Technology label={technology} key={technology} />
+                    ))}
+                  </Stack>
+                </Stack>
+                <Stack className="gap-40">
+                  <Typo variant="h4" className="text-grey-300">
+                    Testing, formatting and code monitoring
+                  </Typo>
+                  <Stack className="gap-12" wrap row>
+                    {[
+                      'JEST',
+                      'REACT TESTING LIBRARY',
+                      'GIT',
+                      'HUSKY',
+                      'ESLINT',
+                      'PRETTIER',
                     ].map((technology) => (
                       <Technology label={technology} key={technology} />
                     ))}
